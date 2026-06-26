@@ -1,8 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head>
-<title></title>
+   <title>Hockey</title>
 </head>
+<style>
+    .desc:after {
+      content: ' â–¼';}
+    .asc:after {
+      content: ' â–²';}
+    .inactive:after {
+      content: ' â–²';
+      color: white;
+      opacity: 0.5;}
 
+
+		    </style>
 <body bgcolor="#CCCCCC" vlink="#0000FF" alink="#0000FF">
 
         <div align="center">
@@ -17,15 +27,24 @@
           </center>
 </div>
 <div align="center">
+  
         <table border="0" width="80%">
           <tr>
                 <td width="10%" bgColor="#99CCFF" align="center"><font size="4">Year</font></td>
                 <td noWrap width="25%" bgColor="#99CCFF"><font size="4">Winner</font></td>
                 <td width="25%" bgColor="#99CCFF"><font size="4">Opponent</font></td>
+  
                 <td width="10%" bgColor="#99CCFF" align="center">
                   <font size="4">Result</font></td>
                 <td width="30%" bgColor="#99CCFF" align="left">
                   <font size="4">Playoff MVP</font></td>
+          </tr>
+         <tr>
+                <td width="10%" bgcolor="#FFFFF7" align="center">2026</td>
+                <td noWrap width="25%" bgcolor="#FFFFF7"><b>Carolina Hurricanes </b> <font size="2">#M1</font></td>
+                <td noWrap width="25%" bgcolor="#FFFFF7">Vegas Golden Knights <font size="2">#P1</font></td>
+                <td noWrap width="10%" bgcolor="#FFFFF7" align="center">4-2</td>
+                <td noWrap width="30%" bgcolor="#FFFFF7" align="left">Jordan Staal, Carolina</td>
           </tr>
     <tr>
                 <td width="10%" bgcolor="#F0F0DF" align="center">2025</td>
@@ -854,21 +873,14 @@
                 <td noWrap width="10%" bgcolor="#FFFFF7" align="center">3-0</td>
                 <td noWrap width="30%" bgcolor="#FFFFF7" align="left">&nbsp;</td>
           </tr>
-          <tr>
-                <td width="10%" bgColor="#99CCFF" align="center"><font size="4">Year</font></td>
-                <td noWrap width="25%" bgColor="#99CCFF"><font size="4">Winner</font></td>
-                <td width="25%" bgColor="#99CCFF"><font size="4">Opponent</font></td>
-                <td width="10%" bgColor="#99CCFF" align="center"><font size="4">Result</font></td>
-                <td width="30%" bgColor="#99CCFF" align="center">&nbsp;</td>
-  
-          </tr>
+    
         </table>
 </div>
 <table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
     <td width="100%">&nbsp;</td>
   </tr>
-  <tr>
+    <tr>
     <td width="100%">(a) Season shortened due to lockout</td>
   </tr>
   <tr>
@@ -890,7 +902,7 @@
       year, so there was no clear annual winner.</i></td>
   </tr>
   <tr>
-    <td width="100%"><i>&nbsp;</i></td>
+    <td width="100%"><i>&nbsp;&nbsp;</i></td>
   </tr>
   <tr>
     <td width="100%"><i>&nbsp;</i></td>
@@ -898,7 +910,7 @@
 </table>
 <div align="center">
   <center>
-        <table border="0" width="85%" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC">
+        <table border="0" width="65%" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC">
           <tr>
             <td width="100%" bgcolor="#003399" align="center">
               <b><i><font color="#CCCCCC" size="5">-- Most Championships --</font></i></b></td>
@@ -907,223 +919,305 @@
   </center>
 </div>
 <div align="center">
-  
-        <table border="0" width="85%">
-          <tr>
-                <td width="22%" bgColor="#99CCFF" align="center">
-                  <p align="left"><font size="4">&nbsp;Team</font></p>
-                </td>
-                <td noWrap width="12%" bgColor="#99CCFF">
-                  <p align="center"><font size="4">Titles</font></p>
-                </td>
-                <td width="68%" bgColor="#99CCFF"><font size="4">&nbsp;Year</font></td>
-          </tr>
-          <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Montreal Canadiens</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">24/34</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1916</b>,1917,<b>1924</b>,1925,<b>1930,1931,1944,1946</b>,1947,1951,1952,<b>1953</b><br>
+  <table id="sortableTable" border="0" width="65%">
+	<thead>
+  <tr>
+     <th onclick="sortTable(0)" width="25%" bgColor="#99CCFF" style="text-align:left; font-weight: normal;"><font size="4">Team</font><span id="arrow0" class="inactive"></span></th>
+	 <th onclick="sortTable(1)" width="10%" style="font-weight: normal;" bgcolor="#99CCFF"><font size="4">Titles</font><span id="arrow1" class="inactive"></span></th>
+	<th width="65%" bgcolor="#99CCFF" style="text-align:left; font-weight: normal;"><font size="4">Year</font></th>
+	  </tr>
+		</thead>
+    <tbody>
+        <tr>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Montreal Canadiens</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">24/34</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1916</b>,1917,<b>1924</b>,1925,<b>1930,1931,1944,1946</b>,1947,1951,1952,<b>1953</b><br>
 				1954,1955,<b>1956,1957,1958,1959,1960,1965,1966</b>,1967,<b>1968,1969<br>
 				1971,1973,1976,1977,1978,1979,1986</b>,1989,<b>1993</b>,2021</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Toronto Maple Leafs</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">13/21</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><i><b>1918</b>* As Toronto Arenas<br>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Toronto Maple Leafs</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">13/21</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><i><b>1918</b>* As Toronto Arenas<br>
                   <b>1922</b> * As Toronto St. Pats<br>
                   </i><b>1932</b>,1933,1935,1936,1938,1939,1940,<b>1942,1945,1947,1948,1949<br>
 				  1951,</b>1959,1960,<b>1962,1963,1964,1967</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Detroit Red Wings</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">11/24</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1934,<b>1936,1937</b>,1941,1942,<b>1943</b>,1945,1948,1949,<b>1950,1952,1954<br>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Detroit Red Wings</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">11/24</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1934,<b>1936,1937</b>,1941,1942,<b>1943</b>,1945,1948,1949,<b>1950,1952,1954<br>
 				1955,</b>1956,1961,1963,1964,1966,1995,<b>1997,1998,2002,2008</b>,2009<br>
 				</font></td>
           </tr>
 		  <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Chicago Blackhawks</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">6/13</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1931,<b>1934,1938</b>,1944,<b>1961</b>,1962,1965,1971,1973,1992,<b>2010,2013<br>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Chicago Blackhawks</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">6/13</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1931,<b>1934,1938</b>,1944,<b>1961</b>,1962,1965,1971,1973,1992,<b>2010,2013<br>
 				2015</b><br>
 				</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Boston Bruins</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">6/20</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1927,<b>1929</b>,1930,<b>1939,1941</b>,1943,1946,1953,1957,1958,<b>1970,1972</b><br>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Boston Bruins</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">6/20</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1927,<b>1929</b>,1930,<b>1939,1941</b>,1943,1946,1953,1957,1958,<b>1970,1972</b><br>
 				1974,1977,1978,1988,1990,<b>2011</b>,2013,2019</font></td>
           </tr>
 		  <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Pittsburgh Penguins</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">5/6</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1991,1992</b>,2008,<b>2009,2016,2017</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Pittsburgh Penguins</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">5/6</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1991,1992</b>,2008,<b>2009,2016,2017</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Edmonton Oilers</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">5/9</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1983,<b>1984,1985,1987,1988,1990,</b>2006,2024,2025</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Edmonton Oilers</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">5/9</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1983,<b>1984,1985,1987,1988,1990,</b>2006,2024,2025</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>New York Rangers</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">4/11</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1928</b>,1929,1932,<b>1933</b>,1937,<b>1940,</b>1950<b>,</b>1972,1979,<b>1994</b>,2014</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>New York Rangers</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">4/11</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1928</b>,1929,1932,<b>1933</b>,1937,<b>1940,</b>1950<b>,</b>1972,1979,<b>1994</b>,2014</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>New York Islanders</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">4/5</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1980,1981,1982,1983</b>,1984</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>New York Islanders</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">4/5</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1980,1981,1982,1983</b>,1984</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>†<i>Ottawa Senators&nbsp;</i>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>â€ <i>Ottawa Senators&nbsp;</i>
     </td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">4/5</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1915,<b>1920,1921,1923,1927</b></font></td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">4/5</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1915,<b>1920,1921,1923,1927</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Colorado Avalanche</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">3/3</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1996,2001,2022</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Colorado Avalanche</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">3/3</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1996,2001,2022</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Tampa Bay Lighting</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">3/5</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>2004</b>,2015,<b>2020,2021</b>,2022</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Tampa Bay Lighting</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">3/5</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>2004</b>,2015,<b>2020,2021</b>,2022</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>New Jersey Devils</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">3/5</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1995,2000</b>,2001,<b>2003</b>,2012</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>New Jersey Devils</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">3/5</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1995,2000</b>,2001,<b>2003</b>,2012</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Philadelphia Flyers</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">2/8</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1974,1975</b>,1976,1980,1985,1987,1997,2010</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Philadelphia Flyers</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">2/8</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1974,1975</b>,1976,1980,1985,1987,1997,2010</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Florida Panthers</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">2/4</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1996,2023,<b>2024,2025</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Florida Panthers</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">2/4</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1996,2023,<b>2024,2025</b></font></td>
           </tr>
 		            <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Los Angeles Kings</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">2/3</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1993,<b>2012,2014</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Los Angeles Kings</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">2/3</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1993,<b>2012,2014</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>†<i>Montreal Moroons</i></td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">2/3</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1926</b>,1928,<b>1935</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>â€ <i>Montreal Moroons</i></td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">2/3</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1926</b>,1928,<b>1935</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Dallas Stars</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/5</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><i>1981,1991
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Dallas Stars</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/5</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><i>1981,1991
                   * As Minnesota North Stars<br>
                   </i><b>1999</b>,2000,2020</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>†<i>Vancouver Millionaires</i>&nbsp;</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/4</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1915</b>,1918,1921,1922</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>â€ <i>Vancouver Millionaires</i>&nbsp;</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/4</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1915</b>,1918,1921,1922</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Calgary Flames</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/3</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1986,<b>1989</b>,2004</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Calgary Flames</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/3</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1986,<b>1989</b>,2004</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Anaheim Ducks</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><i>2003 *
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Anaheim Ducks</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/2</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><i>2003 *
                   As Might Ducks of Anaheim<br>
                   </i><b>2007</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Carolina Hurricanes</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">2002,<b>2006</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Carolina Hurricanes</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">2/3</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">2002,<b>2006,2026</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Seattle Metropolitans</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1917</b>,1920</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Seattle Metropolitans</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/2</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1917</b>,1920</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Vegas Golden Knights</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">2018,<b>2023</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Vegas Golden Knights</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/3</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">2018,<b>2023</b>,2026</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>†<i>Victoria Cougars</i></td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2"><b>1925</b>,1926</font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>â€ <i>Victoria Cougars</i></td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/2</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2"><b>1925</b>,1926</font></td>
           </tr>
 		  <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Washington Capitals</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1998,<b>2018</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>Washington Capitals</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/2</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1998,<b>2018</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>St. Louis Blues</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">1/4</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1968,1969,1970<b>,2019</b></font></td>
+                <td width="22%" bgcolor="#F0F0DF" align="left" nowrap>St. Louis Blues</td>
+                <td noWrap width="12%" bgcolor="#F0F0DF" align="center">1/4</td>
+                <td noWrap width="68%" bgcolor="#F0F0DF"><font size="2">1968,1969,1970<b>,2019</b></font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Vancouver Canucks</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/3</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1982,1994,2011</font></td>
+                <td width="22%" bgcolor="white" align="left" nowrap>Vancouver Canucks</td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/3</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">1982,1994,2011</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Buffalo Sabres</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/2</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1975,1999</font></td>
+                <td width="22%" bgcolor="white" align="left" nowrap>Buffalo Sabres</td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/2</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">1975,1999</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>†<i>Calgary Tigers</i>
+                <td width="22%" bgcolor="white" align="left" nowrap>â€ <i>Calgary Tigers</i>
     </td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/1</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1924</font></td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/1</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">1924</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>†<i>Edmonton Eskimos</i>
+                <td width="22%" bgcolor="white" align="left" nowrap>â€ <i>Edmonton Eskimos</i>
     </td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/1</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1923</font></td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/1</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">1923</font></td>
           </tr>
 		  <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Nashville Predators</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/1</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">2017</font></td>
+                <td width="22%" bgcolor="white" align="left" nowrap>Nashville Predators</td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/1</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">2017</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Ottawa Senators</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/1</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">2007</font></td>
+                <td width="22%" bgcolor="white" align="left" nowrap>Ottawa Senators</td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/1</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">2007</font></td>
           </tr>
           <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>Portland Rosebuds</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/1</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">1916</font></td>
+                <td width="22%" bgcolor="white" align="left" nowrap>Portland Rosebuds</td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/1</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">1916</font></td>
           </tr>
 		  <tr>
-                <td width="22%" bgcolor="#FFFFF7" align="left" nowrap>San Jose Sharks</td>
-                <td noWrap width="12%" bgcolor="#FFFFF7" align="center">0/1</td>
-                <td noWrap width="68%" bgcolor="#FFFFF7"><font size="2">2016</font></td>
+                <td width="22%" bgcolor="white" align="left" nowrap>San Jose Sharks</td>
+                <td noWrap width="12%" bgcolor="white" align="center">0/1</td>
+                <td noWrap width="68%" bgcolor="white"><font size="2">2016</font></td>
           </tr>
-          <tr>
-                <td width="22%" bgColor="#99CCFF" align="center">
-                  <p align="left"><font size="4">&nbsp;Team</font></p>
-                </td>
-                <td noWrap width="12%" bgColor="#99CCFF">
-                  <p align="center"><font size="4">Titles</font></p>
-                </td>
-                <td width="68%" bgColor="#99CCFF"><font size="4">&nbsp;Year</font></td>
-          </tr>
-        </table>
-</div>
 
+<tr>
+                <td width="22%" bgcolor="white" align="left" nowrap>Columbus Blue Jackets</td>
+                <td noWrap width="12%" bgcolor="white" align="center"></td>
+                <td noWrap width="68%" bgcolor="white"><font size="2"></font></td>
+          </tr>
+<tr>
+                <td width="22%" bgcolor="white" align="left" nowrap>Minnesota Wild</td>
+                <td noWrap width="12%" bgcolor="white" align="center"></td>
+                <td noWrap width="68%" bgcolor="white"><font size="2"></font></td>
+          </tr>
+<tr>
+                <td width="22%" bgcolor="white" align="left" nowrap>Seattle Kraken</td>
+                <td noWrap width="12%" bgcolor="white" align="center"></td>
+                <td noWrap width="68%" bgcolor="white"><font size="2"></font></td>
+          </tr>
+<tr>
+                <td width="22%" bgcolor="white" align="left" nowrap>Utah Mammoth</td>
+                <td noWrap width="12%" bgcolor="white" align="center"></td>
+                <td noWrap width="68%" bgcolor="white"><font size="2"></font></td>
+          </tr>
+<tr>
+                <td width="22%" bgcolor="white" align="left" nowrap>Winnipeg Jets</td>
+                <td noWrap width="12%" bgcolor="white" align="center"></td>
+                <td noWrap width="68%" bgcolor="white"><font size="2"></font></td>
+          </tr>
+		</tbody>
+</table>      
+</div>
+	
+        
         <p>Titles - Finals won / How many participated in<br>
-        † - Franchise no longer exists<br>
+        â€  - Franchise no longer exists<br>
         The Ottawa Senators (Original) team listed refers to the original team that folded as the St. Louis Eagles in 1935 (after relocating to St. Louis in 1934).<br>
         </p>
-	</body></html>
+	
+	
+	<script>
+  let sortOrder = [];
+
+  window.onload = function () {
+    // Default sort: Wins (column 1), DESC (highest first)
+    sortOrder[1] = 'desc';
+    document.getElementById('arrow1').className = 'desc';
+
+    // Perform initial sort WITHOUT toggling
+    sortTable(1, true);
+  };
+
+  function sortTable(columnIndex, skipToggle = false) {
+    const table = document.getElementById('sortableTable');
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+
+    // Toggle direction only on user click
+    if (!skipToggle) {
+      sortOrder[columnIndex] =
+        (sortOrder[columnIndex] === 'asc') ? 'desc' : 'asc';
+    }
+
+    // Update arrows
+    const headers = table.querySelectorAll('thead th');
+    for (let i = 0; i < headers.length; i++) {
+  const arrow = document.getElementById('arrow' + i);
+
+  if (arrow) {   // âœ… FIX: only update if span exists
+    arrow.className = (i === columnIndex)
+      ? sortOrder[columnIndex]
+      : 'inactive';
+  }
+}
+
+    // âœ… Remove bolding from all cells
+    rows.forEach(row => {
+      Array.from(row.children).forEach(cell => {
+        cell.classList.remove('sorted-column');
+      });
+    });
+
+    // âœ… Add bolding to sorted column
+    rows.forEach(row => {
+      row.children[columnIndex].classList.add('sorted-column');
+    });
+
+    // Sort rows
+    rows.sort((a, b) => {
+      const aValue = a.children[columnIndex].textContent.trim();
+      const bValue = b.children[columnIndex].textContent.trim();
+
+      return sortOrder[columnIndex] === 'asc'
+        ? aValue.localeCompare(bValue, undefined, { numeric: true })
+        : bValue.localeCompare(aValue, undefined, { numeric: true });
+    });
+
+    // Rebuild table body
+    tbody.innerHTML = '';
+    rows.forEach(row => tbody.appendChild(row));
+  }
+</script>
+	</body>
+</html>
